@@ -8,6 +8,7 @@ Web Publising Study
   주요 기능
   - Grid Layout
   - Sprite image 
+  - Webfont
   - Skip Menu
   - Login
   - BBS
