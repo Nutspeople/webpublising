@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout7-1</title>
+    <style>
+        * {margin:0;padding:0;}
+        #wrap {width:1200px;margin:0 auto;}
+        header {height: 50px;background-color: #e8f5e9;}
+        nav {height:300px;background-color: #c8e6c9;}
+        .side1 {float:left;width:33.3%;height:400px;background-color: #a5d6a7;}
+        .sec1 {float:left;width:66.7%;height:200px;background-color: #81c784;}
+        .sec2 {float:left;width:66.7%;height:200px;background-color: #66bb6a;}
+        article {float:left;width:33.3%;height:250px;}
+        .art1 {background-color: #4caf50;}
+        .art2 {background-color: #43a047;}
+        .art3 {background-color: #388e3c;}
+        .side2 {overflow:hidden;width:90%;height:250px;background-color: #2e7d32;padding:5%;}
+        .side2 > div {float:left;width:23%;height:230px;border-radius: 5%;margin:1%;background-color: #1b5e20;}
+        footer {clear:both;height:50px;background-color: #b9f6ca;}
+
+        /* 화면 너비 0 ~ 1200px */ 
+        @media (max-width:1220px) {
+            #wrap {width:100%;}
+            .art1 {width:50%;}
+            .art2 {width:50%;}
+            .art3 {display: none;}
+            .side2 > div:first-child {margin-left:13.5%;}
+            .side2 > div:nth-child(3n) {display: none;}
+        }
+
+        /* 화면 너비 0 ~ 768px */ 
+        @media (max-width:768px) {
+            .art1 {width:100%;height:200px;}
+            .art2 {width:100%;height:200px;}
+        }
+
+        /* 화면 너비 0 ~ 480px */ 
+        @media (max-width:480px) {
+            .side1 {width:100%;height:200px;}
+            .sec1 {width:100%;}
+            .sec2 {width:100%;}
+            .side2 {height:auto;}
+            .side2 > div{float:none;width:80%;margin:5% 10%;}
+            .side2 > div:first-child {margin-left:10%;}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header>header</header>
+        <nav>nav</nav>
+        <aside class="side1">side1</aside>
+        <section class="sec1">sec1</section>
+        <section class="sec2">sec2</section>
+        <article class="art1">art1</article>
+        <article class="art2">art2</article>
+        <article class="art3">art3</article>
+        <aside class="side2">
+            <div>div</div>
+            <div>div</div>
+            <div>div</div>
+            <div>div</div>
+        </aside>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

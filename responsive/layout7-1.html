@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout7-1</title>
+    <style>
+        * {margin:0;padding:0;}
+        #wrap {width:1200px;margin:0 auto;}
+        #header {height:100px;background-color: #e1f5fe;}
+        #banner {height:400px;background-color: #b3e5fc;}
+        #content1 {overflow:hidden;}
+        #content1 .nav {float:left;width:30%;height: 500px;background-color: #81d4fa;}
+        #content1 .article_right1 {float:left;width:70%;height: 250px;background-color: #4fc3f7;}
+        #content1 .article_right2 {float:left;width:70%;height: 250px;background-color: #29b6f6;}
+        #content2 {overflow:hidden;}
+        #content2 .article_box1 {float:left;width:33.3333%;height:300px;background-color: #03a9f4;}
+        #content2 .article_box2 {float:left;width:33.3333%;height:300px;background-color: #039be5;}
+        #content2 .article_box3 {float:left;width:33.3333%;height:300px;background-color: #0288d1;}
+        #content3 {overflow:hidden;background-color: #0277bd;padding:5%;}
+        #content3 .article_square1 {float:left;width:23%;height:200px;margin:1%;border-radius: 5px;background-color: #01579b;}
+        #content3 .article_square2 {float:left;width:23%;height:200px;margin:1%;border-radius: 5px;background-color: #01579b;}
+        #content3 .article_square3 {float:left;width:23%;height:200px;margin:1%;border-radius: 5px;background-color: #01579b;}
+        #content3 .article_square4 {float:left;width:23%;height:200px;margin:1%;border-radius: 5px;background-color: #01579b;}
+        footer {height:100px;background-color: #80d8ff;}
+
+        /* 화면 너비 0 ~ 1200px */ 
+        @media (max-width:1240px) {
+            #wrap {width:100%;}
+            #content2 .article_box1 {width:50%;}
+            #content2 .article_box2 {width:50%;}
+            #content2 .article_box3 {display:none;}
+
+            #content3 .article_square1 {width:31.333%;}
+            #content3 .article_square2 {width:31.333%;}
+            #content3 .article_square3 {width:31.333%;}
+            #content3 .article_square4 {display:none;}
+        }
+
+        /* 화면 너비 0 ~ 768px */ 
+        @media (max-width:768px) {
+            #content2 .article_box1 {width:100%;}
+            #content2 .article_box2 {width:100%;}
+        }
+
+        /* 화면 너비 0 ~ 480px */ 
+        @media (max-width:480px) {
+            #content1 .nav {width:100%;height:200px;}
+            #content1 .article_right1 {width:100%;height: 200px;}
+            #content1 .article_right2 {width:100%;height: 200px;}
+            #content3 .article_square1 {width:98%;border-radius: 5px;}
+            #content3 .article_square2 {width:98%;border-radius: 5px;}
+            #content3 .article_square3 {width:98%;border-radius: 5px;}
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">header</header>
+        <section id="banner">banner</section>
+        <section id="content1">
+            <nav class="nav">nav</nav>
+            <article class="article_right1">article_right1</article>
+            <article class="article_right2">article_right2</article>
+        </section>
+        <section id="content2">
+            <article class="article_box1">article_box1</article>
+            <article class="article_box2">article_box2</article>
+            <article class="article_box3">article_box3</article>
+        </section>
+        <section id="content3">
+            <article class="article_square1">article_square1</article>
+            <article class="article_square2">article_square2</article>
+            <article class="article_square3">article_square3</article>
+            <article class="article_square4">article_square4</article>
+        </section>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
