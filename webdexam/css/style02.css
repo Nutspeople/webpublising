@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* reset */ 
+* {margin:0;padding:0;font-size:24px;}
+a {color:#fff;text-decoration:none;}
+.clearfix::before, .clearfix::after {display:block;content:'';clear:both;}
+
+
+/* layout */ 
+#wrap {1200px;margin:0 auto;color:#fff;}
+#side {float:left;width:300px;height:850px;text-align:center;}
+#content {float:left;width:900px;height:850px;background-color:#ddd;text-align:center;}  
+
+/* side */ 
+#side .logo {width:300px;height:150px;background-color:#111;line-height:150px;}
+#side .nav {width:300px;height:700px;background-color:#222;line-height:750px;}
+
+/* content */ 
+
+
+/* banner */ 
+#banner {width:900px;height:450px;background-color:#333;line-height:450px;}
+
+/* contents */ 
+#contents {}
+#contents > div {float:left;width:33.333%;height:300px;line-height:300px;}
+#contents > div.cont1 {background-color:#444;}
+#contents > div.cont2 {background-color:#555;}
+#contents > div.cont3 {background-color:#666;}
+
+/* footer */
+#footer {}
+#footer > div.foot1 {float:left;width:200px;height:100px;line-height:100px;}
+#footer > div.foot2 {float:left;width:700px;height:50px;line-height:50px;}
+#footer > div.foot3 {float:left;width:700px;height:50px;line-height:50px;}
