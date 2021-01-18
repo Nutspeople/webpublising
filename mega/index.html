@@ -11,6 +11,7 @@
 
     <!-- 스타일 -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!-- 파비콘 -->
@@ -36,7 +37,7 @@
     
     <!-- 웹폰트 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&subset=korean" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/font-awesome.css">
 
     
@@ -108,8 +109,45 @@
            </div>
        </div>
        <div class="slider">
-           <img src="assets/img/main_slider01.jpg" alt="베스와 베라">
-       </div>
+           <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide ss1">
+                        <div class="container">
+                           <div class="row">
+                                <h2>캡틴 마블<em>Captin Marvel</em></h2>
+                                <p>새로운 히어로, 어벤져스의 희망</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss2">
+                       <div class="container">
+                           <div class="row">
+                                <h2>어벤져스<em>Avengerse</em></h2>
+                                <p>새로운 히어로, 어벤져스의 희망</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ss3">
+                       <div class="container">
+                           <div class="row">
+                                <h2>왕좌의 게임<em>Game of the thrown</em></h2>
+                                <p>새로운 히어로, 어벤져스의 희망</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
    </section>
    <!-- //banner -->
     
@@ -117,6 +155,7 @@
     <script src="assets/js/html5shiv.min.js" type="text/javascript"></script>
     <script src="assets/js/ie-checker.js" type="text/javascript"></script>
     <script src="assets/js/modernizr-custom.js" type="text/javascript"></script>
+    <script src="assets/js/swiper.min.js" type="text/javascript"></script>
     <script src="assets/js/script.js" type="text/javascript"></script>
 </body>
 </html> 
