@@ -67,6 +67,21 @@
         movCont.hide().eq(index).show(); 
     }); 
     
+    // 공지사항 탭메뉴
+    var noticeBtn = $('.notice > ul > li');
+    var noticeCont = $('.notice > ul > li > ul'); 
+    
+    noticeCont.hide().eq(0).show(); 
+    noticeBtn.click(function(e) {
+       e.preventDefault(); 
+        var target = $(this); 
+        var index = target.index(); 
+        
+        noticeBtn.removeClass('active'); 
+        target.addClass('active'); 
+        noticeCont.hide().eq(index).show(); 
+    });
+    
     
     
     
