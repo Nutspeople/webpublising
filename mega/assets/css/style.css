@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* 스킵 메뉴 */ 
+#skip {position:relative;}
+#skip a {position:absolute;left:0;top:-40px;width:140px;border:1px solid #fff;color:#fff;text-align:center;background:#333;}
+#skip a:focus, #skip a:active {top:0;}
+
 /* 레이아웃 */ 
 #mNav {position:absolute;top:10px;right:14px;display:none;}
 #header {width:100%;background:#fff;}
@@ -143,6 +148,7 @@
 .new h2 {font-size:30px;font-weight:500;margin-bottom:20px;}
 .new .new_left {position:relative;height:500px;background: #ccc url('../img/new01.jpg') center center;margin-right:423px;background-size:cover;}
 .new .new_left .play {position: absolute;left:50%;top:50%;width:120px;height:120px;transform: translate(-50%, -50%);}
+.new .new_left .play:hover .st0{fill:#ccc;opacity:0.7;}
 .new .new_left .play .st0 {fill:#fff;opacity: 0.3;}
 .new .new_left .play .st1 {fill:#fff;}
 .new .new_right 
@@ -190,7 +196,8 @@
 .notice ul li ul li dt em {color:#999;}
 .notice ul li ul li dt .bar {position:relative;padding-right:14px;}
 .notice ul li ul li dt .bar:after  {content:'';position:absolute;right:4px;top:5px;width:1px;height:10px;background-color:#999;}
-.notice ul li ul li dd {color:#777;padding-top:3px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
+.notice ul li ul li dd {color:#777;padding-top:3px;}
+.notice ul li ul li a {border:0;padding:0;width:100%;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;}
 
 /* 할인카드 */ 
 .card {padding:17px;}
@@ -244,7 +251,12 @@
 .footer_info li a {color:#8f8f8f;}
 .footer_info address p {color:#8f8f8f;padding-bottom: 15px;}
 
+/* 트레일러 */ 
+.overlay {background:rgba(0,0,0,0.92); width:100%;height:100%;position:fixed;top:0;left:0;z-index:10000;}
+.modal {}
+.modal_close {background: url('../img/close.svg') no-repeat;background-size: 32px 32px;border:0;color:transparent;display:block;width: 32px;height: 32px;overflow:hidden;position:absolute;right:24px;top:24px;text-indent:100%;}
 
+body.modal_on {overflow:hidden;}
 
 /* 미디어 쿼리 */ 
 /* 1024px ~ 1290px */ 

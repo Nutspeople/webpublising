@@ -79,8 +79,14 @@
         
         noticeBtn.removeClass('active'); 
         target.addClass('active'); 
-        noticeCont.hide().eq(index).show(); 
+        noticeCont.hide().eq(index).show();     
     });
+    
+    var noticeBtnA = $('.notice > ul > li > a'); 
+    
+    noticeBtnA.focus(function(e) {
+        var target = $(this); target.next().show().parent('li').addClass('active').siblings().removeClass('active').find('ul').hide();
+    }); 
     
     
     
