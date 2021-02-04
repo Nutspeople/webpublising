@@ -25,8 +25,6 @@ a {text-decoration: none;}
 .icon-wrap .icon:before {content:''; position:absolute;left:0;bottom:10px;}
 .icon-wrap .icon:after {content:''; position:absolute;left:0;top:10px;}
 
-
-
 /* contents */ 
 #contents {text-align:center;color:#fff;}
 #contents > div {height:100vh;line-height:100vh;}
@@ -41,6 +39,10 @@ a {text-decoration: none;}
 #section5 {background:radial-gradient(ellipse farthest-corner at center bottom, #69d2fb 0%, #20438E 100%);}
 #section6 {background:radial-gradient(ellipse farthest-corner at center top, #6CEBCF 0%, #38a7aa 100%);}
 
+@media (max-width:1325px) {
+    #contents > div h2 {font-size: 6vw; font-weight: 300;}
+    
+}
 
 @media (max-width:800px) {
     #nav .menu {display:none;}
@@ -50,5 +52,7 @@ a {text-decoration: none;}
     #nav .menu {float:none;text-align:center;}
     #nav .menu li {width:100%;display:inline-block;cursor:pointer;}
     #nav .menu li.active, #nav .menu li:hover {background:rgba(255,255,255,0.3);}
+    
+    
     
 }
